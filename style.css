@@ -262,3 +262,52 @@ main{
     /* background-color: blue; */
     padding: 10px;
 }
+
+#outro-pic{
+    width: 100%;
+    max-width: 1050px;
+    height: 750px;
+    background-color: red;
+    border-radius: 30px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#outro-pic::after{
+    content: "I love to perform Folk dance.";
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+
+    padding: 30px;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:250px;
+    background: linear-gradient(0deg, rgba(0,255,180,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 3;
+}
+
+#outro-pic::before{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:flex-end;
+    font-size: 25px;
+    padding: 30px;
+    /* font-weight: bold; */
+    color: white;
+    content:"Folk dance is something which connects us to our roots, our culture, and we should be proud about it.";
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:250px;
+    /* background-color: blue; */
+    z-index: 3;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,255,180,0) 100%);
+}
