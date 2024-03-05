@@ -39,8 +39,8 @@ body{
 #intro-pic{
     background-color: black;
     width: 300px;
-    height: 300px;
-    border-radius: 100vh;
+    height: 400px;
+    border-radius: 20px;
     overflow: hidden;
 
     & img{
